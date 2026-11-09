@@ -1,4 +1,4 @@
-# Course Management System (CMS)
+# CourseFlow — Academic Course Management System (CMS)
 
 A web-based academic Course Management System built with **Java Servlets**, **JavaServer Pages (JSP)**, and **MySQL**. The application features role-based access for students and faculty members to manage course registrations, schedules, and student examination grading.
 
@@ -86,7 +86,7 @@ Faculty members can record and update evaluation scores (Quizzes, Assignments, P
 ## Project Structure
 
 ```text
-CMS/
+CourseFlow-CMS/
 ├── add.jsp                 # Student course registration view
 ├── addMarks.jsp            # Faculty mark entry view
 ├── custom.jsp              # Student course search view
@@ -144,14 +144,21 @@ Database credentials are centrally managed in `WEB-INF/classes/DBConnection.java
 
 No need to install Java, Apache Tomcat, or MySQL. If Docker is installed on your machine:
 
-1. **Clone and Start**:
+1. **Clone or Download & Navigate**:
    ```bash
-   git clone <repo-url>
-   cd CMS
+   # If cloning via Git:
+   git clone https://github.com/<your-username>/CourseFlow-CMS.git
+   cd CourseFlow-CMS
+
+   # OR if downloaded as ZIP from GitHub:
+   cd CourseFlow-CMS-main
+   ```
+2. **Start the Application**:
+   ```bash
    docker compose up --build
    ```
    *(Note: On Linux, use `sudo docker compose up --build` if your current user is not in the `docker` group).*
-2. **Access the Application**:
+3. **Access the Application**:
    Open your browser and navigate to:
    ```
    http://localhost:8080/
