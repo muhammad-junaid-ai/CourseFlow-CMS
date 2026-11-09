@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+     <title>ROLE</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="script/script.js" ></script>
+    </head> 
+
+ <body id="img6">  
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form name="role_form" method="post" action="role"  class="mt-5 border p-4 bg-light shadow" onsubmit="return validation_role()" >
+                            <h4 class="mb-5 text-secondary">Select Your Role</h4>
+                        <div class="row">
+                            <div>  
+                                    <label>Select Role</label>
+                                        <select name="role" class="form-select form-select-md mb-3" id="selectDegree">
+                                            <option selected value="S">Student</option>
+                                            <option value="T">Teacher</option>
+                                        </select>
+                            </div>
+                            
+                            <div class="col-md-12 mt-3">
+                                <button class="btn btn-primary float-end" type="submit" value="next">Next</button>
+                                <a href="signin.html">
+                                  Already Have an Account
+                                </a>
+                            </div>    
+                        </div>
+                         
+                    </form>
+        
+                </div>
+            </div>
+        </div>
+ </body>
+</html>

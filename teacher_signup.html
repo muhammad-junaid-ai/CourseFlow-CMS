@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>SIGN UP</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" >
+        <script type="text/javascript" src="script/script.js" ></script>
+    </head> 
+    
+    <body id="img">  
+        <div class="mt-5 container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form name="signup_form" method="post" action="teacher_signup"  class="mt-2 p-4 bg-light shadow" onsubmit="return   validation_teacher()" >
+                            <h4 class="mb-5 text-secondary">Create Teacher Account</h4>
+                        <div class="row">
+                            
+                            <div class="mb-3">
+                                    <label>Status</label>
+                                    <input type="text"  name="status"  value="teacher" class="form-control" placeholder="Teacher" readonly="true">         
+                            </div>
+                             
+                            <div class=" mb-3">
+                                        <label>Name</label>
+                                                    <select name="name" class="form-select form-select-lg mb-3" id="selectName">
+                                                        <option selected value="Open">Open menu</option>
+                                                        <option value="Hassan Khan">Hassan Khan</option>
+                                                        <option value="Umair Babar">Umair Babar</option>
+                                                        <option value="Esha Aftab">Esha Aftab</option>
+                                                        <option value="Khurram Shehzad">Khurram Shehzad</option>
+                                                    </select>
+                            </div>
+                                
+        
+                                <div class="mb-3 col-md-6">
+                                    <label>User Name<span class="text-danger">*</span></label>
+                                    <input type="text" name="username" class="form-control" placeholder="Enter User Name">
+                                </div>
+                                
+                                <div class="mb-3 col-md-6">
+                                    <label>Age (Years)<span class="text-danger">*</span></label>
+                                    <input type="number" name="age" class="form-control" placeholder="Enter Age">
+                                </div>
+                                
+                                <div class="mb-3  ">
+                                    <label>Email<span class="text-danger">*</span></label>
+                                    <input type="text" name="email" class="form-control" placeholder="abc@exyz.com">
+                                </div>
+                                
+                                <div class="mb-3 col-md-6">
+                                    <label>Password<span class="text-danger">*</span></label>
+                                    <input type="password" name="password" class="form-control" placeholder="Enter Password">
+                                </div>
+                                
+                                <div class="mb-3 col-md-6">
+                                  <label>Confirm Password<span class="text-danger">*</span></label>
+                                  <input type="password" name="confirm_password" class="form-control" placeholder="Re-Enter Password">
+                                </div>
+                                 
+          
+                                <div >
+                                    <button class="btn btn-primary float-end" type="submit" value="register">Signup Now</button>
+                                    <button class="btn btn-primary float-start" type="reset" value="reset">Reset Form</button>
+                                </div>
+                             <br/>
+                             
+                                <div class="mt-2"> 
+                                    <a class="float-start" href="signup.html" class="mt-3">Student Signup</a>
+                                    <a class="float-end"  href="signin.html" class="mt-3">Already Have an Account</a>
+                                </div> 
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

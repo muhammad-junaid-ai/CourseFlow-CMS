@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: cms-database
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: project
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./database.sql:/docker-entrypoint-initdb.d/init.sql
+    command: --default-authentication-plugin=mysql_native_password
+
+  web:
+    build: .
+    container_name: cms-app
+    restart: always
+    network_mode: "service:db"
+    depends_on:
+      - db

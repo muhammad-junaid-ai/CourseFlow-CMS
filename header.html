@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <style>
+      ul 
+      {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        min-height: 52px;
+      }
+
+      li 
+      {
+        float: left;
+      }
+      
+      li a 
+      {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover 
+      {
+        background-color:red;
+        color:white;
+      }
+
+      .brand-title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+        margin: 0;
+        font-size: 1.45rem;
+        font-weight: bold;
+        white-space: nowrap;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+<body  style="background-color: #e3f2fd;">
+
+  <ul>
+  
+    <li><a href="add.jsp">ADD</a></li>
+    <li><a href="view">VIEW</a></li>
+    <li><a href="update.jsp">UPDATE</a></li>
+    <li><a href="drop.jsp">DROP</a></li>
+    <li><a href="custom.jsp">SEARCH</a></li>
+    <li class="brand-title">Course Management System</li>
+    <li class="float-end"><a href="signout">SIGN OUT</a></li>
+    <li style="float:right"><a href="history">HISTORY</a></li>
+    <li  style="float:right" ><a href="dashboard.jsp">DASHBOARD</a></li>
+    <li style="float:right"><a href="viewMarks">View Marks</a></li>
+    <!-- <li style="color: red">${name}</li> -->
+    
+  </ul>
+
+</body>
+</html>

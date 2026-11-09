@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	
+	
+	<servlet>
+		<servlet-name>viewstudents</servlet-name>
+		<servlet-class>viewstudents</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewstudents</servlet-name>
+		<url-pattern>/viewstudents</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>signup</servlet-name>
+		<servlet-class>signup</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>signup</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>signin</servlet-name>
+		<servlet-class>signin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>signin</servlet-name>
+		<url-pattern>/signin</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>add</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+
+    <servlet>
+		<servlet-name>view</servlet-name>
+		<servlet-class>view</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>view</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+
+
+	 <servlet>
+		<servlet-name>forgot</servlet-name>
+		<servlet-class>forgot</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>forgot</servlet-name>
+		<url-pattern>/forgot</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>drop</servlet-name>
+		<servlet-class>drop</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>drop</servlet-name>
+		<url-pattern>/drop</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>custom</servlet-name>
+		<servlet-class>custom</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>custom</servlet-name>
+		<url-pattern>/custom</url-pattern>
+	</servlet-mapping>
+	 
+<servlet>
+		<servlet-name>history</servlet-name>
+		<servlet-class>history</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>history</servlet-name>
+		<url-pattern>/history</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>signout</servlet-name>
+		<servlet-class>signout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>signout</servlet-name>
+		<url-pattern>/signout</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>teacher_signup</servlet-name>
+		<servlet-class>teacher_signup</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacher_signup</servlet-name>
+		<url-pattern>/teacher_signup</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>saveMarks</servlet-name>
+		<servlet-class>saveMarks</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>saveMarks</servlet-name>
+		<url-pattern>/saveMarks</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>role</servlet-name>
+		<servlet-class>role</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>role</servlet-name>
+		<url-pattern>/role</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>updateMarks</servlet-name>
+		<servlet-class>updateMarks</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateMarks</servlet-name>
+		<url-pattern>/updateMarks</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>viewMarks</servlet-name>
+		<servlet-class>viewMarks</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewMarks</servlet-name>
+		<url-pattern>/viewMarks</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>dropCourse</servlet-name>
+		<servlet-class>dropCourse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dropCourse</servlet-name>
+		<url-pattern>/dropCourse</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>home.html</welcome-file>
+	</welcome-file-list>
+</web-app>
