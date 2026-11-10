@@ -144,11 +144,14 @@ Database credentials are centrally managed in `WEB-INF/classes/DBConnection.java
 
 No need to install Java, Apache Tomcat, or MySQL. If Docker is installed on your machine:
 
-1. **Clone and Start**:
+1. **Clone or Download & Navigate**:
    ```bash
-   git clone <repo-url>
-   cd CMS
-   docker compose up --build
+   # If cloning via Git:
+   git clone https://github.com/<your-username>/CourseFlow-CMS.git
+   cd CourseFlow-CMS
+
+   # OR if downloaded as ZIP from GitHub:
+   cd CourseFlow-CMS-main
    ```
    *(Note: On Linux, use `sudo docker compose up --build` if your current user is not in the `docker` group).*
 2. **Access the Application**:
