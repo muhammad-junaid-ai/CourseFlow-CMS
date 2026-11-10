@@ -1,6 +1,6 @@
-# CourseFlow — Academic Course Management System (CMS)
+# CourseFlow | Course Management System (CMS)
 
-A web-based academic Course Management System built with **Java Servlets**, **JavaServer Pages (JSP)**, and **MySQL**. The application features role-based access for students and faculty members to manage course registrations, schedules, and student examination grading.
+A dual-portal academic management system for student course enrollment, schedule conflict prevention, and faculty grade and class management.
 
 ---
 
@@ -11,7 +11,7 @@ Pre-seeded trial credentials are available out-of-the-box for instant testing (n
 | Role | Username | Password | Features Accessible |
 | :--- | :--- | :--- | :--- |
 | **Student** | `student` | `123456` | Course registration, schedule view, course drop/search, semester grades |
-| **Teacher** | `teacher` | `123456` | Student roster review, exam marks entry & updates, enrollment drop |
+| **Teacher** | `teacher` | `123456` | View enrolled students, enter/update exam marks, drop student courses |
 
 *(Pre-seeded with a sample course `DBA` taught by instructor `Hassan Khan` and test grades).*
 
@@ -19,7 +19,7 @@ Pre-seeded trial credentials are available out-of-the-box for instant testing (n
 1. Start the app: `docker compose up --build` *(or `sudo docker compose up --build` on Linux)*.
 2. Open [http://localhost:8080/](http://localhost:8080/) in your browser and click **SIGN IN**.
 3. Log in as **`student`** (`123456`) to view active courses, test schedule updating, or inspect grades.
-4. Log out and log in as **`teacher`** (`123456`) to review student rosters, enter marks, or drop courses.
+4. Log out and log in as **`teacher`** (`123456`) to view enrolled students, enter marks, or drop courses.
 
 ---
 
@@ -62,7 +62,7 @@ Faculty members can record and update evaluation scores (Quizzes, Assignments, P
 
 ### Teacher / Faculty Portal
 - **Faculty Registration & Login**: Dedicated authentication for instructors.
-- **Student Enrollment Review**: Inspect enrolled student rosters by course.
+- **Student Enrollment Review**: Inspect enrolled student lists by course.
 - **Grading Management**: Enter and update marks for quizzes, assignments, projects, midterms, and finals.
 - **Enrollment Oversight**: Drop student enrollments when necessary.
 
@@ -86,7 +86,7 @@ Faculty members can record and update evaluation scores (Quizzes, Assignments, P
 ## Project Structure
 
 ```text
-CourseFlow-CMS/
+CMS/
 ├── add.jsp                 # Student course registration view
 ├── addMarks.jsp            # Faculty mark entry view
 ├── custom.jsp              # Student course search view
@@ -104,7 +104,7 @@ CourseFlow-CMS/
 ├── teacher_signup.html     # Faculty sign-up form
 ├── update.jsp              # Course schedule update view
 ├── updateMarks.jsp         # Faculty marks update view
-├── viewStudents.jsp        # Enrolled student roster view
+├── viewStudents.jsp        # Enrolled student list view
 ├── database.sql            # Ready-to-import MySQL database schema
 ├── Dockerfile              # Docker container configuration for cloud deployment
 ├── docker-compose.yml      # Multi-container orchestration (App + MySQL)
@@ -144,21 +144,14 @@ Database credentials are centrally managed in `WEB-INF/classes/DBConnection.java
 
 No need to install Java, Apache Tomcat, or MySQL. If Docker is installed on your machine:
 
-1. **Clone or Download & Navigate**:
+1. **Clone and Start**:
    ```bash
-   # If cloning via Git:
-   git clone https://github.com/<your-username>/CourseFlow-CMS.git
-   cd CourseFlow-CMS
-
-   # OR if downloaded as ZIP from GitHub:
-   cd CourseFlow-CMS-main
-   ```
-2. **Start the Application**:
-   ```bash
+   git clone <repo-url>
+   cd CMS
    docker compose up --build
    ```
    *(Note: On Linux, use `sudo docker compose up --build` if your current user is not in the `docker` group).*
-3. **Access the Application**:
+2. **Access the Application**:
    Open your browser and navigate to:
    ```
    http://localhost:8080/
