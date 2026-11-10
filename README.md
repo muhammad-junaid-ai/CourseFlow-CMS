@@ -153,6 +153,8 @@ No need to install Java, Apache Tomcat, or MySQL. If Docker is installed on your
    # OR if downloaded as ZIP from GitHub:
    cd CourseFlow-CMS-main
    ```
+   docker compose up --build
+   ```
    *(Note: On Linux, use `sudo docker compose up --build` if your current user is not in the `docker` group).*
 2. **Access the Application**:
    Open your browser and navigate to:
