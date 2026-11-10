@@ -283,27 +283,27 @@ function validation_marks()
     alert("Enter Roll Number");  
     return false;  
   }
-  if (oquiz<0 && oquiz>5)
+  if (oquiz<0 || oquiz>5)
   {  
     alert("Enter Quiz Marks Between 0 and 5");  
     return false;  
   }
-  if (oassignment<0 && oassignment>10)
+  if (oassignment<0 || oassignment>10)
   {  
     alert("Enter Assignment Marks Between 0 and 10");  
     return false;  
   }
-  if (oproject<0 && oproject>10)
+  if (oproject<0 || oproject>10)
   {  
     alert("Enter Project Marks Between 0 and 10");  
     return false;  
   }
-  if (omid<0 && omid>35)
+  if (omid<0 || omid>35)
   {  
     alert("Enter Mid Marks Between 0 and 35");  
     return false;  
   }
-  if (ofinal<0 && ofinal>40)
+  if (ofinal<0 || ofinal>40)
   {  
     alert("Enter Final Marks Between 0 and 40");  
     return false;  
