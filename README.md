@@ -147,7 +147,7 @@ No need to install Java, Apache Tomcat, or MySQL. If Docker is installed on your
 1. **Clone or Download & Navigate**:
    ```bash
    # If cloning via Git:
-   git clone https://github.com/<your-username>/CourseFlow-CMS.git
+   git clone https://github.com/muhammad-junaid-ai/CourseFlow-CMS.git
    cd CourseFlow-CMS
 
    # OR if downloaded as ZIP from GitHub:
